@@ -22,6 +22,42 @@ export const robots = [
         name: 'Matrix Chain',
         username: 'Man',
         email: 'Man@Man.com'    
-    }
+    },
+    {
+        id: 5,
+        name: 'Matrix Chain',
+        username: 'Man',
+        email: 'Man@Man.com'    
+    },
+    {
+        id: 6,
+        name: 'Matrix Chain',
+        username: 'Man',
+        email: 'Man@Man.com'    
+    },
+    {
+        id: 7,
+        name: 'Matrix Chain',
+        username: 'Man',
+        email: 'Man@Man.com'    
+    },
+    {
+        id: 8,
+        name: 'Matrix Chain',
+        username: 'Man',
+        email: 'Man@Man.com'    
+    },    
+    {
+        id: 9,
+        name: 'Matrix Chain',
+        username: 'Man',
+        email: 'Man@Man.com'    
+    }, 
+    {
+        id: 10,
+        name: 'Matrix Chain',
+        username: 'Man',
+        email: 'Man@Man.com'    
+    }                      
 
 ]
