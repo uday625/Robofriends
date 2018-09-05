@@ -25,39 +25,39 @@ export const robots = [
     },
     {
         id: 5,
-        name: 'Matrix Chain',
-        username: 'Man',
-        email: 'Man@Man.com'    
+        name: 'Quarck Chain',
+        username: 'QKC',
+        email: 'Qkc@Qkc.com'    
     },
     {
         id: 6,
-        name: 'Matrix Chain',
-        username: 'Man',
-        email: 'Man@Man.com'    
+        name: 'VeChain',
+        username: 'VET',
+        email: 'Vet@Vet.com'    
     },
     {
         id: 7,
-        name: 'Matrix Chain',
-        username: 'Man',
-        email: 'Man@Man.com'    
+        name: 'Cardano',
+        username: 'ADA',
+        email: 'Ada@Ada.com'    
     },
     {
         id: 8,
-        name: 'Matrix Chain',
-        username: 'Man',
-        email: 'Man@Man.com'    
+        name: 'Bitcoin',
+        username: 'BTC',
+        email: 'Btc@Btc.com'    
     },    
     {
         id: 9,
-        name: 'Matrix Chain',
-        username: 'Man',
-        email: 'Man@Man.com'    
+        name: 'Ethereum',
+        username: 'ETH',
+        email: 'Eth@Eth.com'    
     }, 
     {
         id: 10,
-        name: 'Matrix Chain',
-        username: 'Man',
-        email: 'Man@Man.com'    
+        name: 'Aion Network',
+        username: 'AION',
+        email: 'Aion@Aion.com'    
     }                      
 
 ]
