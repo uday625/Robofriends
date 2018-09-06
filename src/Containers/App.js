@@ -6,53 +6,36 @@ import Scroll from '../Components/Scroll';
 import ErrorBoundary from '../Components/ErrorBoundary';
 import './App.css'
 
-import { setSearchField } from '../actions';
+import { setSearchField, requestRobots } from '../actions';
 
 const mapStateToProps = state => {
     return {
-        searchField:state.searchField
+        searchField: state.searchRobots.searchField,
+        robots: state.requestRobots.robots,
+        isPending: state.requestRobots.isPending,
+        error: state.requestRobots.error       
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onSearchChange: (event) => dispatch(setSearchField(event.target.value))
+        onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+        onrequestRobots: () =>  dispatch(requestRobots())
     }
 }
 
 class App extends Component {
-    constructor(){
-        super();
-        this.state={
-            robots: []//,
-            //searchfield: ''            
-        }
-    }
 
-    componentDidMount(){
-        //console.log(this.props.store.getState());
-        fetch('https://jsonplaceholder.typicode.com/users')
-        .then(response=>{
-            return response.json();
-        })
-        .then(users =>{
-            this.setState({robots:users});
-        })
-        
+    componentDidMount(){       
+        this.props.onrequestRobots();
     }
-
-    // onSearchChange = (event)=>{
-    //     this.setState({searchfield: event.target.value})
-    // }
 
     render(){
-
-        const {robots } = this.state;
-        const {searchField, onSearchChange} = this.props
+        const {robots, searchField, onSearchChange, isPending} = this.props
         const filteredRobots = robots.filter(robot =>{
             return robot.name.toLowerCase().includes(searchField.toLowerCase());
         })
-        if(robots.length === 0){
+        if(!isPending){
             return <h1>Loading</h1>
         }else{
             return(
